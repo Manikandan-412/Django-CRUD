@@ -24,8 +24,8 @@ This project is a Django REST API application that provides Create, Read, Update
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Manikandan-412/Django-CRUD.git
+   cd Django-CRUD
    ```
 
 2. **Create and activate a virtual environment:**
@@ -37,9 +37,9 @@ This project is a Django REST API application that provides Create, Read, Update
 
 3. **Install dependencies:**
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install django djangorestframework psycopg2
+```
 
 4. **Configure the database in `settings.py`:** (see the [Database Configuration](#database-configuration) section below)
 
