@@ -63,9 +63,8 @@ async function deleteUser(id) {
     if (confirm){
         await fetch(`/api/person/${id}/`, { method: 'DELETE' });
         fetchUsers();
-        location.reload();
-    }
-    
+        alert('user deleted successfully!');
+    }   
 }
 
 function handleFormSubmit(event) {
