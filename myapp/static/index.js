@@ -39,7 +39,7 @@ async function editUser(id) {
     document.getElementById('age').value = user.age;
     document.getElementById('email').value = user.email;
     document.getElementById('userId').value = id;
-    document.getElementById('submitBtn').textContent = 'Save';
+    document.getElementById('submitBtn').textContent = 'Update';
 }
 
 async function updateUser(event) {
@@ -60,11 +60,12 @@ async function updateUser(event) {
 
 async function deleteUser(id) {
     confirm = confirm("are you sure want to delete?");
-    if (confirm){
+    if (confirm) {
         await fetch(`/api/person/${id}/`, { method: 'DELETE' });
         fetchUsers();
         alert('user deleted successfully!');
-    }   
+    }
+    document.reload();
 }
 
 function handleFormSubmit(event) {

@@ -50,6 +50,7 @@ tr:nth-child(even) {
 }
 
 button {
+    cursor: pointer;
     width: fit-content;
     border-radius: 2px;
     color: white;
